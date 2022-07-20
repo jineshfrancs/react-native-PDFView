@@ -119,6 +119,7 @@ public class PDFView extends com.github.barteksc.pdfviewer.PDFView implements
                 .onPageScroll(this)
                 .spacing(10)
                 .enableAnnotationRendering(enableAnnotations)
+                .linkHandler(new DefaultLinkHandler(this))
                 .load();
         sourceChanged = false;
     }
